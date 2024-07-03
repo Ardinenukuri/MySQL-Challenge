@@ -1,0 +1,13 @@
+DELIMITER //
+
+CREATE FUNCTION DaysUntilDeadline(ProjectID INT) RETURNS INT
+READS SQL DATA
+BEGIN
+    DECLARE days INT;
+    SELECT DATEDIFF(Deadline, CURDATE()) INTO days FROM Projects WHERE ProjectID = ProjectID;
+    RETURN days;
+END;
+
+
+
+DELIMITER ;
