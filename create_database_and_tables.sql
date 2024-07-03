@@ -1,5 +1,5 @@
-CREATE DATABASE Doune;
-USE Doune;
+CREATE DATABASE SoftwareCompany;
+USE SoftwareCompany;
 
 CREATE TABLE Clients (
     ClientID INT AUTO_INCREMENT PRIMARY KEY,
